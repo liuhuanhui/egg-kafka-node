@@ -1,15 +1,18 @@
 {
   "name": "egg-kafka-node",
-  "version": "1.0.7",
+  "version": "2.0",
   "description": "kafka plugin for egg.js",
   "eggPlugin": {
-    "name": "kafkaNode"
+    "name": "kafka nodejs"
   },
   "keywords": [
     "egg",
     "eggPlugin",
     "egg-plugin",
     "kafka-node",
+    "kafka-typescript",
+    "egg-kafka-ts",
+    "egg-kafka-typescript",
     "kafka-plugin",
     "kafka-node-plugin",
     "egg-kafka-node"
@@ -55,12 +58,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JohnApache/egg-kafka-node.git"
+    "url": "git+https://github.com/liuhuanhui/egg-kafka-node.git"
   },
   "bugs": {
-    "url": "https://github.com/JohnApache/egg-kafka-node/issues"
+    "url": "https://github.com/liuhuanhui/egg-kafka-node/issues"
   },
-  "homepage": "https://github.com/JohnApache/egg-kafka-node#readme",
-  "author": "JohnApache",
+  "homepage": "https://github.com/liuhuanhui/egg-kafka-node#readme",
+  "author": "liuhuanhui",
   "license": "MIT"
 }

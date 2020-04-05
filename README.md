@@ -22,6 +22,7 @@
 
 This plug-in is a package of [kafka-node] (https://github.com/SOHU-Co/kafka-node). It is an egg-style plug-in for easy use in the environment of egg.js. It also provides a detailed configuration of methods for sending Kafka messages. Refer to [https://github.com/SOHU-Co/kafka-node] (https://github.com/SOHU-Co/kafka-node). 
 
+##Fork from https://github.com/john apache/egg-kafka-node.git, with support for typescript added in this version
 
 ## Install
 

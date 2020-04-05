@@ -22,14 +22,17 @@
 - [English](README.md)
 - [简体中文](README.zh_CN.md)
 
+
 该插件是[kafka-node](https://github.com/SOHU-Co/kafka-node) 的封装, 方便在egg.js 环境下使用的一个egg风格的插件, 并提供了方便的api发送给kafka消息的方法 部分详细配置请参考 [https://github.com/SOHU-Co/kafka-node](https://github.com/SOHU-Co/kafka-node)
+
+## Fork 自https://github.com/JohnApache/egg-kafka-node.git，在该版本增加支持Typescript
 
 
 ## 依赖说明
 
 ### 依赖的 egg 版本
 
-egg-kafka-node 版本 | egg 1.x
+egg-kafka-node 版本 | egg 1.x ｜ js and typescript
 --- | ---
 1.x | 😁
 0.x | 😁
@@ -157,9 +160,11 @@ class IndexController extends Controller {
     })
   }
 }
-
+```
+##### Consumer
+``` js
 // {app_root}/kafka/someTopic/someKeyConsumer.js
-class SomeKeySubscription extends Subscription {
+module.exports = class SomeKeySubscription {
   async subscribe(message) {
     const {value, topic, key} = message;
     this.ctx.logger.info(`consume message ${value} by topic ${topic} key ${key} consumer`);
@@ -167,6 +172,7 @@ class SomeKeySubscription extends Subscription {
   }
 }
 ```
+
 ## 提问交流
 请到 [egg issues](https://github.com/JohnApache/egg-kafka-node/issues) 异步交流。
 
